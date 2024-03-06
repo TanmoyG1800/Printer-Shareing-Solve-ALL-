@@ -1,0 +1,25 @@
+The Error :- Connect to Printer "Windows Couldn't connect to printer. Check the Printer name and try again. if this is a netwirk printer, make sure that Printer is turn on, and that the printer address is correct"
+
+**ON CLIENT COMPUTER [The system which want to connect with printer]**
+
+FIX 1 :
+Go to Control Panel > Credential Manager > Windows Credentials > Add a Windows Credentials : IP OR HOST NAME of SYSTEM Where printer is Installed, Username, Password.
+DONE 
+
+FIX 2 :
+Open Powershell as Administrator >  Get-HotFix >
+"Uninstall Security Update" WUSA /UNINSTALL /KB:{UPDATE} 
+Restrat PC
+DONE
+
+FIX 3 :
+
+Open file explorer and go to > Windows/System32 and Copy mscms.dll 
+
+if system is x64:
+Past under "C:\Windows\System32\spool\drivers\x64\3"
+
+if system is x32:
+Past under "C:\Windows\System32\spool\drivers\W32X86\3"
+
+DONE

@@ -1,0 +1,10 @@
+**ON CLIENT COMPUTER [The system which want to connect with printer]**
+
+Turn Windows Features On or Off
+Printer and Document Service
+LPD Printer Service
+LPR Port Monitor
+
+Now go to Control Panel > Devices and Printers > add a printer > The printer i want n't listed > Add a local Printer or Network printer with manual setting > Create a local port > Add the Full PATH > Chose the Driver From Installed or Download.
+
+ALL DONE 

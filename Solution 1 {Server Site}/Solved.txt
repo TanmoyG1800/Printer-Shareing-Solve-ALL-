@@ -1,0 +1,14 @@
+**ON Server COMPUTER [The system where the printer is connected and shared]**
+
+. Check network sharing center
+2. Share the printer
+3. Download this files.
+ https://drive.google.com/drive/folders/1a9XDJ2iX93fOMiVANTfvIUPZnC52mmJD
+4. Run the 2 registry files
+5. Go to Windows Drive "C:\Windows\System32" and look for win32spl.dll
+6. Take ownership "watch the video"
+7. Rename the win32spl.dll to win32spl_bak.dll or any file you want
+8. Copy the win32spl.dll and paste it to "C:\Windows\System32"
+9. In search bar type "turn on windows features"
+10. Enable the .net framework 3.5 / 4.8 / smb 1.0
+11. restart

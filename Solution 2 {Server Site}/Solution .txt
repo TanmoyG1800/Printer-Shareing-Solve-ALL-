@@ -1,0 +1,34 @@
+**ON Server COMPUTER [The system where the printer is connected and shared]**
+
+Step - 1
+Turn Windows Features On or Off
+Printer and Document Service
+LPD Printer Service
+LPR Port Monitor
+
+Step - 2
+Local Group Policy Editor
+Administrative Templetes
+Printer
+Configure RPC Connection - Enabled- RPC over named pipes
+Configure RPC Listener - Enabled- RPC over named pipes and TCP
+Configure RPC over TCP - Enabled
+*** IF Your Are Running Home Edition Then Extract the Zip File and Run as Administrators ***
+
+Step - 3
+[HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows NT\Printers\RPC]
+There are 2 values that can be configured:
+RpcUseNamedPipeProtocol REG_DWORD
+0: RpcOverTcp  Value - 0
+1: RpcOverNamedPipes Value - 1
+
+Step - 4
+[HKEY_LOCAL_MACHINE\SYSTEM|CurrentControlSet\Control\Print
+RpcAuthnLevelPrivacyEnabled REG_DWORD
+
+Step - 5
+HKEY_CURRENT_USER\Software\Microsoft\WindowsNT\CurrentVersion\Windows
+Then Right-click on Windows key and select Permissions to EveryOne.
+
+Step - Final
+Print Spooler
